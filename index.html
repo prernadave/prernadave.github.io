@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME PAGE</title>
-    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio |Prerna Dave</title>
 </head>
 
 <body>
@@ -25,9 +32,34 @@
 
     <!-------------------- HOME ---------------------->
     <section id="home">
-        <img src="./Snapchat-32839087~2.jpg" class="home-img" alt="#" />
+        <!-- <img src="./Snapchat-32839087~2.jpg" class="home-img" alt="#" />
         <h1 id="user-detail-name">Prerna Dave</h1>
-        <h2 id="user-detail-intro">I am Full Stack Web Developer </h2>
+        <h2 id="user-detail-intro">I am Full Stack Web Developer </h2> -->
+        <div id="particles-js"></div>
+
+        <div class="content">
+            <h2 id="user-detail-name">Hi There,<br /> I'm Prerna <span>Dave</span></h2>
+            <p id="user-detail-intro">I am into <span class="typing-text"></span></p>
+            <a href="#about" class="btn"><span>About Me</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/prerna-dave-3765aa237/"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/prernadave" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a class="twitter" aria-label="Twitter" href=""
+                            target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="https://instagram.com/prernadave914__?igshid=YmMyMTA2M2Y="><i
+                                class="fab fa-instagram" target="_blank"></i></a></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img draggable="false" class="home-img" src="./Snapchat-32839087~2.jpg" alt="#">
+        </div>
     </section>
 
 
@@ -67,6 +99,7 @@
 
     <!-------------------- PROJECTS ---------------------->
     <section id="projects">Projects
+
         <div class="project-card">
             <img src="./cine maniac screenshot.png" alt="">
             <title class="project-title">Cine Maniac</title>
