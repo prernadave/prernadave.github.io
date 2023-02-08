@@ -1,5 +1,43 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border: none;
+text-transform: capitalize;
+transition: all 0.2s linear;
+}
 
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 
+  body {
+    background: #f7f7f7;
+    font-family: "Poppins", sans-serif;
+  }
+
+  *::selection {
+    background: #2b3dda;
+    color: #fff;
+  }
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  html::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: rgb(235, 202, 245);
+  }
+  html::-webkit-scrollbar-thumb {
+    background: #420177;
+  }  
+  
 
 #home {
     position: relative;
@@ -107,7 +145,7 @@
     display: inline-block;
     margin-bottom: 14px;
   }
-  .social-icons a {
+  .social-icons li a {
     font-size: 2rem;
     display: inline-block;
     line-height: 44px;
@@ -165,23 +203,42 @@
   }
   /* hero media queries ends*/
   /* hero section end */
+
+
   
   /* about section starts */
-  .about {
+
+  .heading {
+    font-size: 3.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
+  }
+  .heading span {
+    color: rgb(115, 3, 167);
+  }
+  #about {
     background: rgb(255, 255, 255);
   }
-  .about .row {
+  #about .row {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    flex-wrap: wrap;
+   
     padding: 4rem;
   }
-  .about .row .image {
+  #about .row .image {
     text-align: center;
     flex: 1 1 35rem;
-  }
-  .about .row .image img {
+    
+        float: left;
+        clear: both;
+    
+  
+    
+    }
+  
+  #about .row .image img {
     margin: 4rem;
     width: 30rem;
     height: auto;
@@ -191,43 +248,102 @@
     transition: 0.3s;
     cursor: pointer;
   }
-  .about .row .image img:hover {
+  #about .row .image img:hover {
     mix-blend-mode: normal;
   }
-  .about .row .content {
+  #about .row .content {
     flex: 1 1 45rem;
     padding: 3rem;
   }
-  .about .row .content h3 {
-    color: rgb(27, 27, 27);
+  #about .row .content #user-detail-name {
+    color: rgb(91, 28, 15);
     font-size: 2.5rem;
   }
-  .about .row .content .tag {
+  #about .row .content .tag {
     font-size: 1.4rem;
-    color: #020133;
+    color: #eca521;
     font-weight: 600;
     margin-top: 1rem;
   }
-  .about .row .content p {
+  #about .row .content #user-detail-intro {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-family: "Nunito";
     font-weight: 600;
     text-transform: none;
+    color: purple;
+    font-size: 20px;
   }
-  .about .row .content .box-container {
+  #about .row .content .box-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.9rem;
     font-family: "Nunito";
     font-weight: 600;
   }
-  .about .row .content .box-container .box p {
+  #about .row .content .box-container .box p {
     text-transform: none;
+    color: rgb(21, 20, 20);
+    font-size: 16px;
+    
   }
-  .about .row .content .box-container .box p span {
-    color: #011aff;
+  #about .row .content .box-container .box p span {
+    color: #2f41e8;
+    font-size: 20px;
   }
   .resumebtn {
     margin-top: 6rem;
   }
+
+  .resumebtn {
+    margin-top: 6rem;
+  }
+  .resumebtn .btn {
+    padding: 1.7rem 3rem;
+    border-radius: 0.5em;
+    transition: 0.3s;
+    color: #fff;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    font-family: "Nunito", sans-serif;
+  }
+  .resumebtn .btn span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+  .resumebtn .btn i {
+    margin-left: 0.3rem;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  .resumebtn .btn:hover {
+    background: #1a047e;
+  }
+  .resumebtn .btn:hover i {
+    transform: translateX(5px);
+  }
+  /* about media queries starts*/
+  @media screen and (max-width: 600px) {
+    .about .row .image {
+      margin-top: 2rem;
+    }
+    .about .row .image img {
+      margin: 0 auto;
+      width: 80%;
+      mix-blend-mode: normal;
+    }
+    .about .row {
+      padding: 0.5rem;
+      margin-bottom: 7rem;
+    }
+    .about .row .content {
+      padding: 1rem;
+    }
+    .about .row .content .box-container {
+      gap: 0;
+    }
+  }
+  /* about media queries ends*/
+  /* about section ends */
