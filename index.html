@@ -1,237 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio |Prerna Dave</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <nav id="nav-menu">
         <ul>
+          <img src="./bitmoji.jpg" />
+    
+          <input type="checkbox" id="check" />
+          <span class="menu">
             <li><a class="nav-link home" href="#home">HOME</a></li>
             <li><a class="nav-link about" href="#about">ABOUT</a></li>
             <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
             <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#"></a></li>
+            <li><a  href="./image/Ayushi-Soni-Resume.pdf"class="nav-link resume" id="resume-button-1" download >Resume<i class="fa fa-download"></i></a></li>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
-    </nav>
-
-
-
-
-    <!-------------------- HOME ---------------------->
-    <section id="home">
-        <!-- <img src="./Snapchat-32839087~2.jpg" class="home-img" alt="#" />
-        <h1 id="user-detail-name">Prerna Dave</h1>
-        <h2 id="user-detail-intro">I am Full Stack Web Developer </h2> -->
-
-        <div id="particles-js"></div>
-
-        <div class="content">
-            <h2 id="user-detail-name">Hi There,<br /> I'm Prerna <span>Dave</span></h2>
-
-            <p id="user-detail-intro">I am into <span class="typing-text"></span></p>
-
-            <a href="#about" class="btn"><span>About Me</span>
-                <i class="fas fa-arrow-circle-down"></i>
-            </a>
-
-            <div class="socials">
-                <ul class="social-icons" style="display: inline-block;">
-                    <li><a class="linkedin" aria-label="LinkedIn"
-                            href="https://www.linkedin.com/in/prerna-dave-3765aa237/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a class="github" aria-label="GitHub" href="https://github.com/prernadave" target="_blank"><i
-                                class="fab fa-github"></i></a></li>
-                    <li><a class="twitter" aria-label="Twitter" href="" target="_blank"><i
-                                class="fab fa-twitter"></i></a></li>
-                    <li><a class="instagram" aria-label="Instagram"
-                            href="https://instagram.com/prernadave914__?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"
-                                target="_blank"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="image">
-            <img draggable="false" class="home-img" src="./bitmoji.jpg" alt="#">
-        </div>
-    </section>
-
-
-
-    <!-------------------- ABOUT ---------------------->
-    <!-- <section title="About" id="about" class="about section">
-        <title>About</title>
-        <h1 id="user-detail-name">Prerna</h1>
-        <h2 id="user-detail-intro">I am a Developer who knows HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS, MONGODB,
-            POSTMAN</h2>
-    </section> -->
-
-    <section class="about section" id="about">
-        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
-        <div class="row">
-
-            <div class="image">
-                <img draggable="false" class="tilt" src="./Snapchat-32839087~2.jpg" alt="">
-            </div>
-
-            <div class="content">
-                <h3 id="user-detail-name">I'm Prerna</h3>
-                <span class="tag">Full Stack Web Developer</span>
-
-                <p id="user-detail-intro">I am a Full-Stack developer based in Uttar Pradesh, India.
-                    I am very passionate about improving my coding skills & developing applications & websites.
-                    I build WebApps and Websites using HTML CSS JavaScript.
-                    Working for myself to improve my skills.
-                    Love to build Full-Stack clones. </p>
-
-                <div class="box-container">
-                    <div class="box">
-
-                        <p><span> phone : </span> +91 9625005027</p>
-                    </div>
-                    <div class="box">
-                        <p><span> email : </span> prernadave2914@gmail.com</p>
-                        <p><span> place : </span> Uttar Pradesh, India - 412206</p>
-                    </div>
-                </div>
-
-                <div class="resumebtn">
-                    <a href="#" class="btn"><span>Resume</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- about section ends -->
-
-
-
-
-
-
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
-                alt="nodejs.png" />
-            <h5 class="skills-card-name">Node JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fexpressjs-tutorial%2F&psig=AOvVaw1Nvd5UopILGcTiRz6_iGyI&ust=1675883715544000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjs-LyPhP0CFQAAAAAdAAAAABAE"
-                alt="express.png" />
-            <h5 class="skills-card-name">Express JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
-                alt="mongodb.png" />
-            <h5 class="skills-card-name">Mongo DB</h5>
-        </div>
-    </section>
-
-
-
-    <!-------------------- PROJECTS ---------------------->
-    <section id="projects">Projects
-
-        <div class="project-card">
-            <img src="./cine maniac screenshot.png" alt="">
-            <title class="project-title">Cine Maniac</title>
-            <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on Cine Maniac
-                app. Cine Maniac is a streaming service with original stories .</p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/prernadave/recondite-bikes-7810/tree/Day-5"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://amazing-torte-2416cc.netlify.app/home.html"></a></p>
-        </div>
-
-        <div class="project-card">
-            <img src="./cine maniac screenshot.png" alt="">
-            <title class="project-title">Cine Maniac</title>
-            <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on Cine Maniac
-                app. Cine Maniac is a streaming service with original stories .</p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/prernadave/recondite-bikes-7810/tree/Day-5"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://amazing-torte-2416cc.netlify.app/home.html"></a></p>
-        </div>
-
-        <div class="project-card">
-            <img src="./cine maniac screenshot.png" alt="">
-            <title class="project-title">Cine Maniac</title>
-            <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on Cine Maniac
-                app. Cine Maniac is a streaming service with original stories .</p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/prernadave/recondite-bikes-7810/tree/Day-5"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://amazing-torte-2416cc.netlify.app/home.html"></a></p>
-        </div>
-
-        <div class="project-card">
-            <img src="./cine maniac screenshot.png" alt="">
-            <title class="project-title">Cine Maniac</title>
-            <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on Cine Maniac
-                app. Cine Maniac is a streaming service with original stories .</p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/prernadave/recondite-bikes-7810/tree/Day-5"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://amazing-torte-2416cc.netlify.app/home.html"></a></p>
-        </div>
-    </section>
-
-
-
-    <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-        <h1>Contact</h1>
-        <a id="contact-github" href="https://github.com/prernadave">GitHub</a>
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/prerna-dave-3765aa237/">LinkedIn</a>
-        <a id="contact-phone" href="#">Mobile</a>
-        <a id="contact-email" href="prernadave3914@gmail.com">Email</a>
-    </section>
-
-
-
-    <!-------------------- RESUME ---------------------->
-    <section id="resume">
-        <button id="resume-button-1" src="">Resume 1</button>
-        <button id="resume-button-2" src="">Resume 2</button>
-    </section>
-
-
-    <!-------------------- GitHUB ---------------------->
-    <section class="react-activity-calendar">
-        <h1>GitHub React-Activity-Calendar</h1>
-        <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=prernadave&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-            alt="streakstat" />
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=prernadave"
-            alt="top_languages" />
-        <img id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=prernadave&count_private=true" alt="stat-card" />
-    </section>
+      </nav>
+    
+    
 </body>
-
 </html>
