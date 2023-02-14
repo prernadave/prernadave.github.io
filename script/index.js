@@ -84,7 +84,7 @@ async function fetchData(type = "skills") {
 }
 
 function showSkills(skills) {
-    let skillsContainer = document.getElementById("skills-card");
+    let skillsContainer = document.getElementById("row");
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `

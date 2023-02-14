@@ -349,7 +349,7 @@ hr {
     margin: auto;
     margin-top: 2rem;
   }
-  .skills .container .row {
+  .skills .container #row {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
@@ -393,7 +393,7 @@ hr {
       padding: 0;
       margin: 0;
     }
-    .skills .container .row {
+    .skills .container #row {
       grid-template-columns: repeat(1, 1fr);
       margin: 1rem;
       padding: 2rem 0.2rem 2rem 0.2rem;

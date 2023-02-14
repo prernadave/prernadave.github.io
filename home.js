@@ -12,7 +12,7 @@ document.addEventListener('visibilitychange',
     });
 
 
-  
+
 
 
 
@@ -32,14 +32,14 @@ async function fetchData(type = "skills") {
     let response
     type === "skills" ?
         response = await fetch("skills.json")
-        : 
+        :
         response = await fetch("./projects/project.json")
     const data = await response.json();
     return data;
 }
 
 function showSkills(skills) {
-    let skillsContainer = document.getElementById("skills-card");
+    let skillsContainer = document.getElementById("row")
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
