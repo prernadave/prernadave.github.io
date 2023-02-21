@@ -60,11 +60,11 @@ fetchData().then(data => {
 
 
 document.getElementById("resume-button-1").onclick=()=>{
-    window.location.assign("https://drive.google.com/file/d/1jzan2pIg7CBVGlm7XLy6kNtdvCfbGjUQ/view?usp=share_link");
+    window.location.assign("https://drive.google.com/file/d/1jzan2pIg7CBVGlm7XLy6kNtdvCfbGjUQ/view?usp=share_link", "_blank");
 }
 
 document.getElementById("resume-button-2").onclick=()=>{
-   window.location.assign("https://drive.google.com/file/d/1jzan2pIg7CBVGlm7XLy6kNtdvCfbGjUQ/view?usp=share_link");
+   window.location.assign("https://drive.google.com/file/d/1jzan2pIg7CBVGlm7XLy6kNtdvCfbGjUQ/view?usp=share_link", "_blank");
 }
    
 
