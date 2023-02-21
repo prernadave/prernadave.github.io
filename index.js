@@ -111,12 +111,12 @@ function typeWriter() {
   }
 
 
-  var typed = new Typed(".typing-2", {
-    strings: ["Full Stack Web Developer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+  // var typed = new Typed(".typing-2", {
+  //   strings: ["Full Stack Web Developer"],
+  //   typeSpeed: 100,
+  //   backSpeed: 60,
+  //   loop: true
+// });
 // //   // owl carousel script
 // //   $('.carousel').owlCarousel({
 // //     margin: 20,
