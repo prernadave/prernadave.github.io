@@ -651,6 +651,10 @@ hr {
   
 }
 
+.home-img{
+    width: 40%;
+}
+
 .project-tech-stack {
     text-align: center;
 }
@@ -669,4 +673,56 @@ hr {
 
 .brk{
     margin: 2% 0 2% 0;
+}
+
+@media (max-width:600px) {
+    .container .first2cards {
+        display: inline;
+        text-align: center;
+    }
+
+    .container .second2cards {
+        display: inline;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+       
+    }
+
+   
+
+    #hide{
+        display: inline;
+    }
+
+    #reach{
+        display: inline;
+    }
+
+
+   #cal{
+        display: inline;
+    }
+
+    #github-streak-stats{
+        width: 100%;
+    }
+    #github-top-langs{
+        width: 100%;
+    }
+
+    #github-stats-card{
+        width: 100%;
+    }
+
+    .home-img{
+        width: 60%;
+        
+    }
+
+    .user-detail-intro{
+        display: inline;
+        font-family: poppins;
+    }
 }
