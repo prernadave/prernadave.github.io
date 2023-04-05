@@ -349,68 +349,15 @@ section {
 
 }
 
-.teams .carousel .project-card {
-    background: #FA5DA2;
-    border-radius: 5px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-   
-}
-
-.teams .carousel .project-card:hover {
-    background: rgb(255, 255, 255);
-    color: #07080B;
-}
-
-.teams .carousel .project-card .box {
+.first2cards{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    gap: 10px;
 }
 
-.teams .carousel .project-card:hover .box {
-    transform: scale(1.05);
+.second2cards{
+    display: flex;
+    gap: 10px;
 }
-
-.teams .carousel .project-card #text {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.teams .carousel .project-card img {
-    height: 150px;
-    width: 250px;
-    object-fit: cover;
-    border: 5px solid #fffefc;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .project-card:hover img {
-    border-color: #000000;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    background: #7590e2 !important;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #07080B;
-    transition: all 0.3s ease;
-}
-
-
 
 #stats>div {
     display: flex;
