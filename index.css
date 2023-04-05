@@ -8,6 +8,18 @@ body {
     font-family: 'segoe ui';
 }
 
+body {
+    
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 .nav {
     height: 50px;
     width: 100%;
@@ -725,4 +737,15 @@ hr {
         display: inline;
         font-family: poppins;
     }
+}
+
+.switch{
+    border: none;
+    background-color: transparent;
+    color: #efefef;
+    cursor: pointer;
+}
+
+.sub-title {
+    color: #FA5DA2;
 }
