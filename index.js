@@ -3,11 +3,6 @@ document.getElementById('resume-link-1').addEventListener("click",()=>{
     window.open("./assets/Prerna_Dave_Resume (2).pdf","_blank");
   })
   
-  document.getElementById('resume-link-2').addEventListener("click",()=>{
-    window.open("./assets/Prerna_Dave_Resume (2).pdf","_blank");
-  })
-
-
   async function fetchData(type = "skills") {
     let response
     type === "skills" ?
