@@ -2,6 +2,10 @@
 document.getElementById('resume-link-1').addEventListener("click",()=>{
     window.open("./assets/Prerna_Dave_Resume (2).pdf","_blank");
   })
+
+  document.getElementById('resume-link-2').addEventListener("click",()=>{
+    window.open("https://drive.google.com/file/d/1jzan2pIg7CBVGlm7XLy6kNtdvCfbGjUQ/view?usp=share_link","_blank");
+  })
   
   async function fetchData(type = "skills") {
     let response
