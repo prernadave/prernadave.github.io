@@ -311,7 +311,7 @@ section {
 
 .skills .container #row {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
 }
@@ -321,7 +321,7 @@ section {
     padding: 10px;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: #FA5DA2;
+    background: #FDBED1;
     transition: 0.2s;
 }
 
