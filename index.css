@@ -573,8 +573,8 @@ hr {
     height: 1px;
     width: 85%;
     background: #FA5DA2;
-    margin-top: 5%;
-    margin-bottom: 5%;
+   
+    margin: auto;
 }
 
 .contact .contact-content .column {
