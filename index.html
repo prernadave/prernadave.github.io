@@ -118,16 +118,61 @@
 
     <!-- ---------------------------------------------------👇skills section starts----------------------------------------------------------------- -->
 
-    <section id="skills" class="skills">
+    <section id="skills" style="margin-top: -3%;" class="skills">
         <title></title>
 
         <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills</h2>
 
-        <div class="container" class="skills-card">
+        <div id="skills_container">
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/javascript.png" alt="nodejs.png" />
+                <h5 class="skills-card-name">Javascript</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/nodejs.png" alt="express.png" />
+                <h5 class="skills-card-name">Node.js</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Status_iucn_EX_icon.svg/480px-Status_iucn_EX_icon.svg.png"
+                    alt="mongodb.png" />
+                <h5 class="skills-card-name">Express.js</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/mongodb.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">Mongo DB</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/mysql.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">MySQL</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/redis.svg" alt="mongodb.png" />
+                <h5 class="skills-card-name">Redis</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/amazon-aws.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">AWS</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/html5.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">HTML</h5>
+            </div>
+            <div class="skills-card">
+                <img class="skills-card-img" src="./images/css3.png" alt="mongodb.png" />
+                <h5 class="skills-card-name">CSS</h5>
+            </div>
+            <!-- <div class="skills-card">
+                <img class="skills-card-img" src="./images/re" alt="mongodb.png" />
+                <h5 class="skills-card-name">React</h5>
+            </div> -->
+        </div>
+        <!-- <div class="container" class="skills-card">
+
             <div id="row" class="skills-card">
 
             </div>
-        </div>
+        </div> -->
     </section>
 
     <hr>
@@ -137,147 +182,114 @@
 
 
 
-    <section class="teams" id="projects">
-
-        <h1> <i style="color: #000000;" class="fas fa-project-diagram"></i> Projects</h1>
-
-        <!-- projects container -->
-        <div class="container">
-
-            <div class="first2cards">
 
 
-                <!-- Medistar -->
-                <div class="card project-card">
+    <section style="margin-top: -3%;" class="projectsection" id="projects">
+        <h2 style="text-align: center;" class="heading"><i class="fas fa-laptop-code"></i>Projects</h2>
 
-                    <img class="card-img-top"
+        <!-- 1 -->
+        <div class="project_container">
+
+            
+            <div class="project-card">
+                <h3 class="project-title">Mon-Amour</h3>
+                <div><img id="project_img" src="./images/mon amour portfolio.png" alt=""></div>
+                <div id="project_descriptions">
+                   
+                    <div id="project_content">
+                        <p class="project-description">Mon Amour is a shopping and lifestyle brand which is the ultimate
+                            destination for the latest fashion styles that are handpicked and are available at the best
+                            price.</p>
+                        <p class="project-tech-stack"><span> HTML | CSS | Javascript | Node.js | Express.js </span></p>
+                    </div>
+
+                    <div id="deployed_container">
+                        <a style="text-decoration: none;" class="project-github-link"
+                            href="https://github.com/prernadave/Mon-Amour">
+                            <button>Github</button>
+
+                        </a>
+                        <a style="text-decoration: none;" class="project-deployed-link"
+                            href="https://mon-amour.netlify.app/"><button>Live</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Medistar Hospital</h3>
+                <div><img id="project_img"
                         src="https://user-images.githubusercontent.com/109690823/229313097-98ac03fb-69b0-4833-849c-48c4a1b9d38d.png"
-                        alt="Card image cap">
-
-                    <div class="card-block">
-                        <h4 class="card-title project-title">Medistar Hospital</h4>
-
-                        <p class="card-text project-description"> <a href=""></a> Medistar Hospital
-                            Management System is a web application built
-                            using Nodejs,Expressjs,Mongoose,Redis and MongoDB.</p>
-
-                        <p class="project-tech-stack"> <span style="color: #FA5DA2;">Html</span> | <span
-                                style="color: #000000;">CSS</span> | <span style="color: #FA5DA2;">JavaScript</span> |
-                            <span style="color: #000000;">Node</span> | <span style="color: #FA5DA2;">Express</span> |
-                            <span style="color: #000000;">MongoDB</span>
+                        alt=""></div>
+                <div id="project_descriptions">
+                    
+                    <div id="project_content">
+                        <p class="project-description">Medistar Hospital Management system is designed to automate the
+                            management of hospital appointments, including appointment scheduling, and other
+                            administrative tasks.
                         </p>
-
-                        <div
-                            style="display: flex; justify-content: space-around; align-items: center; text-align: center; margin-top: 2%;">
-                            <p class="project-github-link"> <a href="https://github.com/prernadave/Medistar-Hospital-"
-                                    target="_blank">Github</a></p>
-                            <a class="project-deployed-link" target="_blank"
-                                href="https://medistar-hospitals.netlify.app/" style="margin-top: -2.5%;">Live</a>
-                        </div>
+                        <p class="project-tech-stack"> <span>HTML | CSS | Javascript | Node.js | Express.js |
+                                MongoDB</span></p>
                     </div>
-                </div>
 
-
-                <!-- Apna E store -->
-                <div class="card project-card">
-                    <img class="card-img-top" src="./images/mon-amour git.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 style="color: #FA5DA2;text-align: center;" class="card-title project-title">Mon Amour
-                            <p style="color: #000000; text-align: center; font-size: 16px;font-weight: normal;"
-                                class="card-text project-description"> <a href=""></a>Mon Amour is a shopping and
-                                lifestyle brand which is the ultimate
-                                destination for the latest fashion styles that are handpicked and are available at the
-                                best price.</p>
-                            <p class="project-tech-stack"> <span style="color: #FA5DA2; font-size: 16px">Html</span> |
-                                <span style="color: #000000; font-size: 16px">CSS</span> | <span
-                                    style="color: #FA5DA2;font-size: 16px">JavaScript</span>
-                                |
-                                <span style="color: #000000;font-size: 16px">Node</span> | <span
-                                    style="color: #FA5DA2;font-size: 16px">Express</span>
-                                |
-                                <span style="color: #000000;font-size: 16px">MongoDB</span>
-                            </p>
-
-                            <div
-                                style="display: flex; justify-content: space-around; align-items: center; text-align: center; margin-top: 2%;">
-
-                                <p class="project-github-link" style="font-size: 16px"> <a
-                                        href="https://github.com/prernadave/Mon-Amour" target="_blank">Github</a></p>
-                                <a class="project-deployed-link" style="font-size: 16px" target="_blank"
-                                    href="https://stalwart-pika-681f47.netlify.app" class="btn btn-primary">Live</a>
-                            </div>
+                    <div id="deployed_container">
+                        <a style="text-decoration: none;" class="project-github-link"
+                            href="https://github.com/faraz412/cozy-passenger-4798"> <button>Github</button>
+                        </a>
+                        <a style="text-decoration: none;" class="project-deployed-link"
+                            href="https://medistar-hospital.netlify.app/"><button>Live</button></a>
                     </div>
                 </div>
             </div>
+           
+            <div class="project-card">
+                <h3 class="project-title">Apna E Store </h3>
+                <div><img id="project_img" src="./images/apna-e-store.png" alt=""></div>
+                <div id="project_descriptions">
+                    
+                    <div id="project_content">
+                        <p class="project-description">Apna E-store offers its customers a delightful shopping
+                            experience and help them in bringing home the latest & best of technology at unbeatable
+                            price.</p>
+                        <p class="project-tech-stack"><span>HTML | CSS | Javascript
+                                MongoDB</span></p>
+                    </div>
 
-            <br class="brk">
-
-
-            <div class="second2cards">
-
-                <!-- Cine Maniac -->
-                <div class="card project-card">
-                    <img class="card-img-top" src="https://i.ibb.co/d4NJWNS/landing-page.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 style="color: #FA5DA2;text-align: center;" class="card-title project-title">Cine Maniac</h4>
-                        <p style="color: #000000; text-align: center;" class="card-text project-description"> <a
-                                href=""></a>Clone of Appletv+ discover the best movies, series, and
-                            shows on Cine Maniac app. Cine Maniac is a streaming service with original stories . </p>
-                        <p class="project-tech-stack"> <span style="color: #FA5DA2;">Html</span> | <span
-                                style="color: #000000;">CSS</span> | <span style="color: #FA5DA2;">JavaScript</span> |
-                            <span style="color: #000000;">Node</span> | <span style="color: #FA5DA2;">Express</span> |
-                            <span style="color: #000000;">MongoDB</span>
-                        </p>
-
-                        <div
-                            style="display: flex; justify-content: space-around; align-items: center; text-align: center; margin-top: 2%;">
-                            <p class="project-github-link"> <a
-                                    href="https://github.com/prernadave/recondite-bikes-7810/tree/Day-5"
-                                    target="_blank">Github</a>
-                            </p>
-                            <a class="project-deployed-link" target="_blank"
-                                href="https://amazing-torte-2416cc.netlify.app/home.html"
-                                class="btn btn-primary">Live</a>
-                        </div>
+                    <div id="deployed_container">
+                        <a style="text-decoration: none;" class="project-github-link"
+                            href="https://apnaestore.netlify.app/"><button>Github</button>
+                        </a>
+                        <a style="text-decoration: none;" class="project-deployed-link"
+                            href="https://github.com/prernadave/Apna-E-store"><button>Live</button></a>
                     </div>
                 </div>
-
-
-                <!-- Money Up  -->
-                <div class="card project-card">
-                    <img class="card-img-top"
-                        src="https://camo.githubusercontent.com/9eb234d0de13425c5c6fe0996b52616f65a5213055a1c10e2bbe59834719fd32/68747470733a2f2f692e6962622e636f2f68465763486e592f6d6f6e65792d312e706e67"
-                        alt="Card image cap">
-                    <div class="card-block">
-                        <h4 style="color: #FA5DA2;text-align: center;" class="card-title project-title">Money Up</h4>
-                        <p style="color: #000000; text-align: center;" class="card-text project-description"> <a
-                                href=""></a> Money Up is a budget tracker for the modern age.Say no more to
-                            carrying paper envelopes. This virtual budget program keeps you on track with family and
-                            friends with the time-tested envelope budgeting method.</p>
-                        <p class="project-tech-stack"> <span style="color: #FA5DA2;">Html</span> | <span
-                                style="color: #000000;">CSS</span> | <span style="color: #FA5DA2;">JavaScript</span> |
-                            <span style="color: #000000;">Node</span> | <span style="color: #FA5DA2;">Express</span> |
-                            <span style="color: #000000;">MongoDB</span>
-                        </p>
-
-                        <div
-                            style="display: flex; justify-content: space-around; align-items: center; text-align: center; margin-top: 2%;">
-                            <p class="project-github-link"> <a href="https://github.com/prernadave/Money_up"
-                                    target="_blank">Github</a></p>
-                            <a class="project-deployed-link" target="_blank" href="https://money-up.netlify.app/"
-                                class="btn btn-primary">Live</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+           
+            <div class="project-card">
+                <h3 class="project-title">Cine Maniac</h3>
+                <div><img id="project_img" src="./images/cine maniac port.png" alt=""></div>
+                <div id="project_descriptions">
+                   
+                    <div id="project_content">
+                        <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on
+                            Cine Maniac app. Cine Maniac is a streaming service with original stories .
+                        </p>
+                        <p class="project-tech-stack"><span>HTML | CSS | Javascript</span></p>
+                    </div>
 
-
-
-
-        </div>
-        </div>
+                    <div id="deployed_container">
+                        <a style="text-decoration: none;" class="project-github-link"
+                            href="https://github.com/prernadave/Cine-Maniac"> <button>Github</button>
+                        </a>
+                        <a style="text-decoration: none;" class="project-deployed-link"
+                            href="https://amazing-torte-2416cc.netlify.app/home.html"><button>Live</button></a>
+                    </div>
+                </div>
+            </div>
     </section>
+
+   
+
+
 
 
     <hr>
