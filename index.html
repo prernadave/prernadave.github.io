@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="media.css">
     <title>Prerna Dave | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -53,7 +54,7 @@
             <a href="#skills" class="nav-link skills">Skills</a>
             <a href="#projects" class="nav-link projects">Projects</a>
             <a href="#contact" class="nav-link contact">Contact</a>
-            <a href="./assets/Prerna_Dave_Resume (2).pdf" class="nav-link resume" id="resume-link-1" download>
+            <a href="./assets/Prerna_Dave_Resume (5).pdf" class="nav-link resume" id="resume-link-1" download>
                 <button id="resume-button-1"
                     style="color: #fffffc; border: none; background: inherit; font-weight: 600;"> Resume</button></a>
 
@@ -70,10 +71,10 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, I'm a <span id="user-detail-name">Prerna Dave</span></div>
-                <div class="text-2"><span>Full Stack Web</span> <span>Developer</span></div>
+                <div class="text-1">Hello, I'm <span id="user-detail-name">Prerna Dave</span></div>
+                <div class="text-2"><span>Full Stack</span> <span>Developer</span></div>
 
-                <div class="text-3 d-none"><span class="typing"></span></div>
+                <!-- <div class="text-3 d-none"><span class="typing"></span></div> -->
 
                 <button id="resume-button-2" style="border: none; background:  #FA5DA2; font-weight: 600; color:white">
                     <a href="./assets/Prerna_Dave_Resume (2).pdf" download="Prerna-Dave-Resume" id="resume-link-2">
@@ -82,18 +83,25 @@
                         Resume </a> </button>
 
             </div>
-        </div>
-    </section>
 
+            <div class="img-right">
+                <img src="https://media3.giphy.com/media/NgurY1o4z080Jfoyzw/giphy.gif?cid=6c09b95290d633090b0fde2185c3648f30dd1657e7dc895a&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s"
+                    alt="">
+            </div>
+        </div>
+
+
+    </section>
+    <hr>
 
 
     <!-- -------------------------------------------------------------Home Section Ends----------------------------------------------------------------------------- -->
 
     <!-- ---------------------------------------------------------------About------------------------------------------------------------------------- -->
 
-    <div id="about" class="about section prerna">
+    <div id="about" class="about section prerna-about">
 
-        <h2 class="mid">About<span style="color:#FA5DA2;"> Me</span> <i class="fas fa-user-alt"></i></h2>
+        <h2 class="mid" >About<span style="color:#FA5DA2;"> Me</span> <i class="fas fa-user-alt"></i></h2>
 
         <img class="home-img" src="./images/Snapchat-32839087~2.jpg"
             style="  box-shadow: 0 5px 10px rgba(161, 159, 159, 0.6);" alt="">
@@ -107,7 +115,7 @@
         </p>
 
         <div id="aboutflex">
-            <a class="hello" href="./assets/Prerna_Dave_Resume (2).pdf" download>Resume <i
+            <a class="hello" href="./assets/Prerna_Dave_Resume (5).pdf" download>Resume <i
                     class="fa fa-download"></i></a>
 
 
@@ -118,7 +126,7 @@
 
     <!-- ---------------------------------------------------👇skills section starts----------------------------------------------------------------- -->
 
-    <section id="skills" style="margin-top: -3%;" class="skills">
+    <section id="skills" class="skills">
         <title></title>
 
         <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills</h2>
@@ -162,17 +170,9 @@
                 <img class="skills-card-img" src="./images/css3.png" alt="mongodb.png" />
                 <h5 class="skills-card-name">CSS</h5>
             </div>
-            <!-- <div class="skills-card">
-                <img class="skills-card-img" src="./images/re" alt="mongodb.png" />
-                <h5 class="skills-card-name">React</h5>
-            </div> -->
+           
         </div>
-        <!-- <div class="container" class="skills-card">
-
-            <div id="row" class="skills-card">
-
-            </div>
-        </div> -->
+        
     </section>
 
     <hr>
@@ -184,18 +184,18 @@
 
 
 
-    <section style="margin-top: -3%;" class="projectsection" id="projects">
+    <section  class="projectsection" id="projects">
         <h2 style="text-align: center;" class="heading"><i class="fas fa-laptop-code"></i>Projects</h2>
 
         <!-- 1 -->
         <div class="project_container">
 
-            
+
             <div class="project-card">
                 <h3 class="project-title">Mon-Amour</h3>
                 <div><img id="project_img" src="./images/mon amour portfolio.png" alt=""></div>
                 <div id="project_descriptions">
-                   
+
                     <div id="project_content">
                         <p class="project-description">Mon Amour is a shopping and lifestyle brand which is the ultimate
                             destination for the latest fashion styles that are handpicked and are available at the best
@@ -214,14 +214,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="project-card">
                 <h3 class="project-title">Medistar Hospital</h3>
                 <div><img id="project_img"
                         src="https://user-images.githubusercontent.com/109690823/229313097-98ac03fb-69b0-4833-849c-48c4a1b9d38d.png"
                         alt=""></div>
                 <div id="project_descriptions">
-                    
+
                     <div id="project_content">
                         <p class="project-description">Medistar Hospital Management system is designed to automate the
                             management of hospital appointments, including appointment scheduling, and other
@@ -240,12 +240,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="project-card">
                 <h3 class="project-title">Apna E Store </h3>
                 <div><img id="project_img" src="./images/apna-e-store.png" alt=""></div>
                 <div id="project_descriptions">
-                    
+
                     <div id="project_content">
                         <p class="project-description">Apna E-store offers its customers a delightful shopping
                             experience and help them in bringing home the latest & best of technology at unbeatable
@@ -263,12 +263,12 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="project-card">
                 <h3 class="project-title">Cine Maniac</h3>
                 <div><img id="project_img" src="./images/cine maniac port.png" alt=""></div>
                 <div id="project_descriptions">
-                   
+
                     <div id="project_content">
                         <p class="project-description">Clone of Appletv+ discover the best movies, series, and shows on
                             Cine Maniac app. Cine Maniac is a streaming service with original stories .
@@ -287,7 +287,7 @@
             </div>
     </section>
 
-   
+
 
 
 
@@ -298,7 +298,7 @@
 
 
     <section class="react-activity-calendar">
-        <h1 style="text-align: center;font-size: 30px;margin-bottom: 4%;"> <i class="fab fa-github"></i> <span
+        <h1 class="githubactivity" style="text-align: center;font-size: 30px; margin-bottom: 4%;"> <i class="fab fa-github"></i> <span
                 style="color: #FA5DA2;">GitHub</span>
             <span>Activity</span> <span style="color: #FA5DA2;">Calendar</span>
         </h1>
@@ -322,9 +322,9 @@
         </div>
 
 
-        <hr style="margin-top: 4%; margin-bottom: 6%;">
+      
 
-
+<hr>
 
 
 
@@ -341,13 +341,13 @@
             
     </section>
 
-    <hr style="margin-top: -1%;">
+    <hr >
 
 
     <!-- contact section start -->
     <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title" style="text-align: center; font-size: 30px;margin-top: -8%;"> <i style="color: #000000;"
+        <div class="contact-max-width">
+            <h2 class="title" style="text-align: center; font-size: 30px;"> <i style="color: #000000;"
                     class="fas fa-phone-alt"></i> <span style="color: #FA5DA2;">Contact</span><span> me</span></h2>
             <div class="contact-content">
                 <div class="column left" id="reach">

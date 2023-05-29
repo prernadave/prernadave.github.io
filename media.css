@@ -1,0 +1,354 @@
+@media (max-width:765px) {
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+   
+}
+
+@media (max-width:600px) {
+
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: auto;
+        justify-content: space-evenly;
+        width: 92%;
+        padding-top: 10vh;
+    }
+
+    .deployed_container {
+        margin-top: 1px;
+    }
+
+    .project-github-link>button {
+        font-size: small;
+    }
+
+    .project-deployed-link>button {
+        font-size: small;
+    }
+
+    .project-card {
+        font-size: small;
+    }
+
+    #hide {
+        display: inline;
+    }
+
+    #reach {
+        display: inline;
+    }
+
+
+    #cal {
+        display: inline;
+    }
+
+    #github-streak-stats {
+        width: 100%;
+    }
+
+    #github-top-langs {
+        width: 100%;
+    }
+
+    #github-stats-card {
+        width: 100%;
+    }
+
+    .home-img {
+        width: 60%;
+
+    }
+
+    .user-detail-intro {
+        display: inline;
+        font-family: poppins;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 938px) {
+    #skills_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+
+    #skills_container {
+        width: 75%;
+        gap: 60px;
+
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 710px) {
+    .project_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: auto;
+        justify-content: space-evenly;
+        width: 92%;
+        padding-top: 10vh;
+    }
+
+    .deployed_container {
+        margin-top: 1px;
+    }
+
+    .project-github-link>button {
+        font-size: small;
+    }
+
+    .project-deployed-link>button {
+        font-size: small;
+    }
+
+    .project-card {
+        font-size: small;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .project-description {
+        display: none;
+    }
+
+    #skills_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    #skills {
+        margin-top: 2vh;
+    }
+
+
+
+}
+
+@media only screen and (max-width:280px) {
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2>span {
+        font-size: 40px;
+        font-weight: 600;
+        /* margin-left: -3px; */
+        /* position: relative; */
+        text-align: center;
+    }
+
+    .home .home-content .text-2 span {
+        animation: animate 3s linear infinite alternate;
+    }
+
+    @keyframes animate {
+
+
+        0% {
+            color: rgb(46, 44, 44);
+            left: 0;
+        }
+
+        50% {
+            left: calc(100% - 100px);
+        }
+
+        100% {
+            color: #fff;
+            left: 0;
+            text-shadow: 0 0 10px #FA5DA2,
+                0 0 10px #FA5DA2,
+                0 0 15px #FA5DA2,
+                0 0 25px #FA5DA2;
+        }
+    }
+
+    .home .home-content .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+    }
+
+    .home .home-content .text-3 span {
+        color: #57a5e9;
+        font-weight: 500;
+    }
+
+    .home .home-content button {
+        display: inline-block;
+        background: #FA5DA2;
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 25px;
+        margin-top: 20px;
+        font-weight: 400;
+        border-radius: 6px;
+
+        transition: all 0.3s ease;
+    }
+
+    #skills_container {
+        width: 50%;
+        gap: 50px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+
+    }
+
+    .sub-title {
+        font-size: small;
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width:765px) {
+    .max-width {
+        display: flex;
+       
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+
+    .img-right>img {
+        width: 80%;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 35px;
+    }
+
+    #resume-button-2 {
+        border: none;
+        background: #FA5DA2;
+        font-weight: 400;
+       cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    #resume-button-2 >a{
+        color: white;
+    }
+
+    #home {
+        margin-bottom: 30%;
+    }
+
+    .text-1{
+        margin-top: 30%;
+    }
+
+    .react-activity-calendar >h1 >span {
+        font-size: 20px;
+    }
+
+    #calendar> h2> span{
+        font-size: 20px;
+    }
+
+    .contact > .contact-max-width > h2> span{
+        font-size: 20px;
+    }
+
+    .projectsection > h2 {
+        font-size: 30px;
+       
+    }
+
+    .projectsection{
+        margin-top: 3%;
+    }
+
+    #projects{
+        margin-top: 7%;
+        margin-top: 10%;
+    }
+
+
+    #skills{
+        margin-bottom: 10%;
+    }
+
+    #about > h2 > span {
+        font-size: 25px;
+    }
+
+    #about > h2  {
+        font-size: 25px;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    #skills > h2 {
+        font-size: 25px;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    }
