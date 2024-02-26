@@ -49,9 +49,10 @@
     .nav>#nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+        /* height: 0px; */
     }
 
-   
+
 }
 
 @media (max-width:600px) {
@@ -80,6 +81,7 @@
 
     .project-card {
         font-size: small;
+
     }
 
     #hide {
@@ -132,6 +134,87 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    .max-width {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 20px; */
+        align-items: center;
+        text-align: center;
+        /* margin: auto; */
+        /* border: 1px solid red; */
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid rgb(65, 204, 53); */
+    }
+
+    .img-right {
+        display: flex;
+
+        /* border: 1px solid rgb(192, 88, 206); */
+    }
+
+    .img-right>img {
+        width: 80%;
+        max-width: 300px;
+        /* margin-top: 20px; */
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 24px;
+        margin-top: 10px;
+        word-wrap: none;
+    }
+
+    #resume-link-2 {
+        display: inline-block;
+        /* background: #ffd700; */
+        font-weight: 400;
+        cursor: pointer;
+        padding: 8px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        /* margin-top: 15px; */
+        transition: background-color 0.3s ease;
+
+    }
+
+
+
+    #resume-link-2:hover {
+        background-color: black;
+
+    }
+
+    /* #home {
+        margin-bottom: 10%;
+
+    } */
+
+    .text-1 {
+        margin-top: 10%;
+    }
+
+
+    #user-detail-intro {
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #resume-link-3 {
+        margin-top: 20px;
+    }
+
+}
+
 @media screen and (min-width: 500px) and (max-width: 710px) {
     .project_container {
         display: grid;
@@ -157,6 +240,7 @@
 
     .project-card {
         font-size: small;
+
     }
 
 
@@ -265,90 +349,144 @@
 
 }
 
-
-@media (max-width:765px) {
+@media (max-width: 765px) {
     .max-width {
         display: flex;
-       
         flex-direction: column;
+        gap: 20px;
+        align-items: center;
         text-align: center;
+        /* margin: auto; */
+        /* border: 1px solid red; */
     }
 
-    
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid rgb(65, 204, 53); */
+    }
+
+    .img-right {
+        display: flex;
+
+        /* border: 1px solid rgb(192, 88, 206); */
+    }
 
     .img-right>img {
         width: 80%;
+        max-width: 300px;
+        /* margin-top: 20px; */
+        border-radius: 10px;
+        margin: auto;
     }
 
     .home .home-content .text-2 {
-        font-size: 35px;
+        font-size: 24px;
+        margin-top: 10px;
+        word-wrap: none;
     }
 
-    #resume-button-2 {
-        border: none;
-        background: #FA5DA2;
+    #resume-link-2 {
+        display: inline-block;
+        /* background: #ffd700; */
         font-weight: 400;
-       cursor: pointer;
-        padding: 10px 20px;
+        cursor: pointer;
+        padding: 8px 15px;
         border-radius: 10px;
-    }
-
-    #resume-button-2 >a{
+        text-decoration: none;
         color: white;
+        /* margin-top: 15px; */
+        transition: background-color 0.3s ease;
+
     }
 
-    #home {
-        margin-bottom: 30%;
+
+
+    #resume-link-2:hover {
+        background-color: black;
+
     }
 
-    .text-1{
-        margin-top: 30%;
+    /* #home {
+        margin-bottom: 10%;
+
+    } */
+
+    .text-1 {
+        margin-top: 10%;
     }
 
-    .react-activity-calendar >h1 >span {
+
+    #user-detail-intro {
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #resume-link-3 {
+        margin-top: 20px;
+    }
+
+
+    .react-activity-calendar>h1>span {
         font-size: 20px;
     }
 
-    #calendar> h2> span{
+    #github-streak-stats {
+        width: 300px;
+    }
+
+    #github-top-langs {
+        width: 300px;
+    }
+
+    #github-stats-card {
+        width: 300px;
+    }
+
+    #calendar>h2>span {
         font-size: 20px;
     }
 
-    .contact > .contact-max-width > h2> span{
+    .contact>.contact-max-width>h2>span {
         font-size: 20px;
     }
 
-    .projectsection > h2 {
+    .projectsection>h2 {
         font-size: 30px;
-       
+
     }
 
-    .projectsection{
+    .projectsection {
         margin-top: 3%;
+
     }
 
-    #projects{
-        margin-top: 7%;
+    #projects {
+        /* margin-top: 7%; */
         margin-top: 10%;
-    }
-
-
-    #skills{
         margin-bottom: 10%;
     }
 
-    #about > h2 > span {
-        font-size: 25px;
-    }
 
-    #about > h2  {
-        font-size: 25px;
+    #skills {
         margin-bottom: 10%;
-        margin-top: 10%;
     }
 
-    #skills > h2 {
+    #about>h2>span {
+        font-size: 25px;
+    }
+
+    #about>h2 {
         font-size: 25px;
         margin-bottom: 10%;
         margin-top: 10%;
     }
+
+    #skills>h2 {
+        font-size: 25px;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
+}

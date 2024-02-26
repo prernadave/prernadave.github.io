@@ -4,28 +4,18 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-
 }
 
 body {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-body {
-    font-family: 'segoe ui';
-    background-color: white;
-    color: black;
-    font-size: 25px;
+    font-family: "segoe ui";
+    background: #1a1a1a;
 }
 
 .nav {
     height: 50px;
     width: 100%;
     z-index: 99999;
-    background-color: #FA5DA2;
+    background-color: #ffd700;
     position: fixed;
 }
 
@@ -36,7 +26,8 @@ body {
 .nav>.nav-header>.nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: #1a1a1a;
+    font-weight: bold;
     padding: 10px 10px 10px 10px;
 }
 
@@ -58,33 +49,38 @@ body {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
-    /* border: solid 1px #000000; */
+    color: #1a1a1a;
+    font-weight: bold;
     align-items: center;
     margin-top: -0.5%;
-
 }
 
 .nav>.nav-links>a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: gray;
 }
 
 .nav>#nav-check {
     display: none;
 }
 
-
 /* ------------------------------------------------------Navbar ends----------------------------------------------------------------------------------- */
 
 /* home section styling */
 #home {
     display: flex;
-    height: 98vh;
+    height: 700px;
     color: white;
     /* min-height: 880px; */
+    background-color: #1a1a1a;
+
     font-family: "Ubuntu", sans-serif;
-    text-align: center;
+    /* text-align: center; */
     background-attachment: fixed;
+}
+
+.img-right img {
+    width: 300px;
+    border-radius: 50%;
 }
 
 .home .max-width {
@@ -92,17 +88,15 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 85%;
+
     padding: 60px;
     margin: auto;
     /* border: #ed6ba3 1px solid;  */
-
 }
-
-
 
 .home .home-content .text-1 {
     font-size: 27px;
-    color: #ed6ba3;
+    color: #ffd700;
 }
 
 .home .home-content .text-2 {
@@ -110,6 +104,7 @@ body {
     font-weight: 600;
     margin-left: -3px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .home .home-content .text-2 span {
@@ -117,8 +112,6 @@ body {
 }
 
 @keyframes animate {
-
-
     0% {
         color: rgb(46, 44, 44);
         left: 0;
@@ -131,17 +124,14 @@ body {
     100% {
         color: #fff;
         left: 0;
-        text-shadow: 0 0 10px #FA5DA2,
-            0 0 10px #FA5DA2,
-            0 0 15px #FA5DA2,
-            0 0 25px #FA5DA2;
+        text-shadow: 0 0 10px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700,
+            0 0 25px #ffd700;
     }
 }
 
-
 .home .home-content button {
     display: inline-block;
-    background: #FA5DA2;
+    background: #ffd700;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
@@ -161,15 +151,10 @@ body {
     background: none;
 }
 
-
-
 .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
 }
-
-
-
 
 .home .home-content a {
     font-size: 20px;
@@ -179,10 +164,10 @@ body {
     font-size: 50px;
 }
 
-#resume-button-2 >a{
+#resume-button-2>a {
     color: white;
+    background-color: #ffd700;
 }
-
 
 /* section {
     padding: 100px 0;
@@ -197,11 +182,15 @@ body {
 .prerna-about {
     width: 85%;
     border: #000000 1px;
+    color: #ffd700;
     font-size: larger;
     display: block;
     margin: 5% auto 5% auto;
     text-align: center;
+}
 
+#user-detail-intro {
+    text-align: left;
 }
 
 #aboutflex {
@@ -210,8 +199,8 @@ body {
     margin-top: 5%;
 }
 
-#aboutflex >a{
-    color: #FA5DA2;
+#aboutflex>a {
+    color: #ffd700;
     text-decoration: none;
 }
 
@@ -228,20 +217,15 @@ body {
     text-decoration: none;
 }
 
-
-
-
 .skills h2 {
-
-    color: black;
+    color: white;
     text-align: center;
     font-size: 30px;
 }
 
 .skills .heading span {
-    color: #FA5DA2;
+    color: #ffd700;
 }
-
 
 #skills_container {
     width: 60%;
@@ -254,8 +238,9 @@ body {
     gap: 60px;
     padding: 35px 10rem;
     background-color: rgb();
-    background-color: #f5c5d9;
+    background-color: #ffd700;
     border-radius: 10px;
+
 }
 
 .skills-card>img {
@@ -274,8 +259,6 @@ body {
     margin-bottom: 5%;
 }
 
-
-
 .projectsection {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -292,7 +275,7 @@ body {
 }
 
 .project_container>div {
-    background-color: #ed6ba3;
+    background-color: #ffd700;
     border-radius: 20px;
     padding: 15px;
     border-radius: 5px;
@@ -300,15 +283,13 @@ body {
     text-align: center;
 }
 
-.project_container :hover {
-
-    background-color: rgb(0, 0, 0);
+.project-card:hover {
+    background-color: gray;
     transition: all 0.2s ease-in-out;
 }
 
 #project_img {
     width: 90%;
-
 }
 
 .project-title {
@@ -323,7 +304,7 @@ body {
 .project-github-link>button {
     text-align: center;
     align-items: center;
-    background-color: #FA5DA2;
+    background-color: #fa5da2;
 }
 
 #deployed_container {
@@ -340,7 +321,7 @@ a {
 }
 
 .project-github-link>button:hover {
-    background-color: #ed6ba3;
+    background-color: #ffd700;
 }
 
 .project-github-link>button {
@@ -374,7 +355,7 @@ a {
 }
 
 .project-deployed-link>button:hover {
-    background-color: #ed6ba3;
+    background-color: #ffd700;
 }
 
 .project-deployed-link>button {
@@ -403,6 +384,7 @@ a {
 
 .project-tech-stack>span {
     color: #ffffff;
+    font-weight: bold;
 }
 
 #project_content {
@@ -414,11 +396,13 @@ a {
     padding-top: 5px;
 }
 
-
 .fa {
     color: white;
 }
 
+.githubactivity {
+    color: #ffd700;
+}
 
 #stats>div {
     display: flex;
@@ -428,7 +412,7 @@ a {
 
 #stats img {
     width: 50%;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 #statsimg>img {
@@ -456,10 +440,12 @@ a {
     margin-top: 5%;
     border: solid black;
 }
-.react-activity-calendar
-{margin-top: 5%;
+
+.react-activity-calendar {
+    margin-top: 5%;
     margin-bottom: 5%;
 }
+
 #calendar {
     padding: 1%;
     margin-top: 5%;
@@ -472,7 +458,6 @@ a {
     text-align: center;
 }
 
-
 .textforcalender {
     font-size: 30px;
     text-align: center;
@@ -484,10 +469,9 @@ hr {
     border: none;
     height: 1px;
     width: 85%;
-    background: #FA5DA2;
-    margin-left:auto ;
+    background: #ffd700;
+    margin-left: auto;
     margin-right: auto;
-    
 }
 
 .contact .contact-content .column {
@@ -535,7 +519,7 @@ hr {
 }
 
 .contact .contact-content .info .sub-title {
-    color: #333;
+    color: #ffd700;
 }
 
 .contact .right form .fields {
@@ -597,7 +581,7 @@ hr {
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: #FA5DA2;
+    background: #ffd700;
     border: none;
     transition: all 0.3s ease;
 }
@@ -607,30 +591,19 @@ hr {
     background: none;
 }
 
-
-
-
-
-
-
 .button-div button:hover {
-    background-color: #FA5DA2;
+    background-color: #fa5da2;
 }
 
 /* projects */
-
 
 .home-img {
     width: 40%;
 }
 
-
-
-
 .brk {
     margin: 2% 0 2% 0;
 }
-
 
 .switch {
     border: none;
@@ -640,11 +613,35 @@ hr {
 }
 
 .sub-title {
-    color: #FA5DA2;
+    color: #fa5da2;
 }
 
-.contact{
-    
+.contact {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+#resume-link-2 {
+    padding: 15px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#resume-link-3 {
+    color: white;
+    font-weight: bold;
+
+}
+
+.project-description {
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+.project-description:hover {
+    font-weight: bold;
+    text-align: left;
+
 }

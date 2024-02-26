@@ -21,8 +21,8 @@
     <!-- 👇Github calender style sheet -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"> -->
     <link rel="stylesheet" href="./github.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
 
 </head>
@@ -55,9 +55,9 @@
             <a href="#projects" class="nav-link projects">Projects</a>
             <a href="#contact" class="nav-link contact">Contact</a>
             <a href="./assets/Prerna_Dave_Resume (5).pdf" class="nav-link resume" id="resume-link-1" download>
-                <button id="resume-button-1"
-                    style="color: #fffffc; border: none; background: inherit; font-weight: 600;"> Resume</button></a>
 
+                Resume
+            </a>
         </div>
 
 
@@ -76,17 +76,15 @@
 
                 <!-- <div class="text-3 d-none"><span class="typing"></span></div> -->
 
-                <button id="resume-button-2" style="border: none; background:  #FA5DA2; font-weight: 600; color:white">
-                    <a href="./assets/Prerna_Dave_Resume (2).pdf" download="Prerna-Dave-Resume" id="resume-link-2">
-
-
-                        Resume </a> </button>
+                <!-- <button id="resume-button-2" style="border: none; font-weight: 600; color:white"> -->
+                <a href="./assets/Prerna_Dave_Resume (5).pdf" download="Prerna-Dave-Resume" id="resume-link-2">
+                    Resume <i class="fa fa-download"></i> </a>
+                <!-- </button> -->
 
             </div>
 
             <div class="img-right">
-                <img src="https://media3.giphy.com/media/NgurY1o4z080Jfoyzw/giphy.gif?cid=6c09b95290d633090b0fde2185c3648f30dd1657e7dc895a&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=s"
-                    alt="">
+                <img src="./images/coding_image.png" alt="coding girl image">
             </div>
         </div>
 
@@ -101,10 +99,10 @@
 
     <div id="about" class="about section prerna-about">
 
-        <h2 class="mid" >About<span style="color:#FA5DA2;"> Me</span> <i class="fas fa-user-alt"></i></h2>
+        <h2 style="color: white;" class="mid">About<span style="color:white"> Me</span> <i class="fas fa-user-alt"></i>
+        </h2>
 
-        <img class="home-img" src="./images/Snapchat-32839087~2.jpg"
-            style="  box-shadow: 0 5px 10px rgba(161, 159, 159, 0.6);" alt="">
+        <img class="home-img" src="./images/transparent.png" style="  width: 300px;" alt="">
 
         <p id="user-detail-intro">Enthusiastic about learning and expressing new technology. An
             aspiring node developer with 1200+ hours of practical experience
@@ -114,12 +112,12 @@
             to produce useful solutions.
         </p>
 
-        <div id="aboutflex">
-            <a class="hello" href="./assets/Prerna_Dave_Resume (5).pdf" download>Resume <i
-                    class="fa fa-download"></i></a>
+
+        <a href="./assets/Prerna_Dave_Resume (5).pdf" download="Prerna-Dave-Resume" id="resume-link-3">
+            Resume <i class="fa fa-download"></i> </a>
 
 
-        </div>
+
     </div>
 
     <hr>
@@ -170,9 +168,9 @@
                 <img class="skills-card-img" src="./images/css3.png" alt="mongodb.png" />
                 <h5 class="skills-card-name">CSS</h5>
             </div>
-           
+
         </div>
-        
+
     </section>
 
     <hr>
@@ -184,8 +182,9 @@
 
 
 
-    <section  class="projectsection" id="projects">
-        <h2 style="text-align: center;" class="heading"><i class="fas fa-laptop-code"></i>Projects</h2>
+    <section class="projectsection" id="projects">
+        <h2 style="text-align: center; color: white; font-size: 30px;" class="heading"><i
+                class="fas fa-laptop-code"></i>Projects</h2>
 
         <!-- 1 -->
         <div class="project_container">
@@ -197,20 +196,22 @@
                 <div id="project_descriptions">
 
                     <div id="project_content">
-                        <p class="project-description">Mon Amour is a shopping and lifestyle brand which is the ultimate
+                        <p style="text-align: left;" class="project-description">Mon Amour is a shopping and lifestyle
+                            brand which is the ultimate
                             destination for the latest fashion styles that are handpicked and are available at the best
                             price.</p>
-                        <p class="project-tech-stack"><span> HTML | CSS | Javascript | Node.js | Express.js </span></p>
+                        <p class="project-tech-stack"><span> HTML | CSS | JavaScript | Node.js | Express.js | MongoDB
+                            </span></p>
                     </div>
 
                     <div id="deployed_container">
                         <a style="text-decoration: none;" class="project-github-link"
-                            href="https://github.com/prernadave/Mon-Amour">
+                            href="https://github.com/prernadave/Mon-Amour" target="_blank">
                             <button>Github</button>
 
                         </a>
                         <a style="text-decoration: none;" class="project-deployed-link"
-                            href="https://mon-amour.netlify.app/"><button>Live</button></a>
+                            href="https://mon-amour.netlify.app/" target="_blank"><button>Live</button></a>
                     </div>
                 </div>
             </div>
@@ -227,16 +228,17 @@
                             management of hospital appointments, including appointment scheduling, and other
                             administrative tasks.
                         </p>
-                        <p class="project-tech-stack"> <span>HTML | CSS | Javascript | Node.js | Express.js |
+                        <p class="project-tech-stack"> <span>HTML | CSS | JavaScript | Node.js | Express.js |
                                 MongoDB</span></p>
                     </div>
 
                     <div id="deployed_container">
                         <a style="text-decoration: none;" class="project-github-link"
-                            href="https://github.com/faraz412/cozy-passenger-4798"> <button>Github</button>
+                            href="https://github.com/faraz412/cozy-passenger-4798" target="_blank">
+                            <button>Github</button>
                         </a>
                         <a style="text-decoration: none;" class="project-deployed-link"
-                            href="https://medistar-hospital.netlify.app/"><button>Live</button></a>
+                            href="https://medistar-hospital.netlify.app/" target="_blank"><button>Live</button></a>
                     </div>
                 </div>
             </div>
@@ -250,16 +252,15 @@
                         <p class="project-description">Apna E-store offers its customers a delightful shopping
                             experience and help them in bringing home the latest & best of technology at unbeatable
                             price.</p>
-                        <p class="project-tech-stack"><span>HTML | CSS | Javascript
-                                MongoDB</span></p>
+                        <p class="project-tech-stack"><span>HTML | CSS | JavaScript | MongoDB</span></p>
                     </div>
 
                     <div id="deployed_container">
                         <a style="text-decoration: none;" class="project-github-link"
-                            href="https://apnaestore.netlify.app/"><button>Github</button>
+                            href="https://apnaestore.netlify.app/" target="_blank"><button>Github</button>
                         </a>
                         <a style="text-decoration: none;" class="project-deployed-link"
-                            href="https://github.com/prernadave/Apna-E-store"><button>Live</button></a>
+                            href="https://github.com/prernadave/Apna-E-store" target="_blank"><button>Live</button></a>
                     </div>
                 </div>
             </div>
@@ -278,13 +279,16 @@
 
                     <div id="deployed_container">
                         <a style="text-decoration: none;" class="project-github-link"
-                            href="https://github.com/prernadave/Cine-Maniac"> <button>Github</button>
+                            href="https://github.com/prernadave/Cine-Maniac" target="_blank"> <button>Github</button>
                         </a>
                         <a style="text-decoration: none;" class="project-deployed-link"
-                            href="https://amazing-torte-2416cc.netlify.app/home.html"><button>Live</button></a>
+                            href="https://amazing-torte-2416cc.netlify.app/home.html"
+                            target="_blank"><button>Live</button></a>
                     </div>
                 </div>
             </div>
+
+        </div>
     </section>
 
 
@@ -298,22 +302,22 @@
 
 
     <section class="react-activity-calendar">
-        <h1 class="githubactivity" style="text-align: center;font-size: 30px; margin-bottom: 4%;"> <i class="fab fa-github"></i> <span
-                style="color: #FA5DA2;">GitHub</span>
-            <span>Activity</span> <span style="color: #FA5DA2;">Calendar</span>
+        <h1 class="githubactivity" style="text-align: center;font-size: 30px; margin-bottom: 4%; color: white;"> <i
+                class="fab fa-github"></i> <span style="color: white;">GitHub</span>
+            <span>Activity</span> <span style="color: white;">Calendar</span>
         </h1>
 
         <div class="streaks">
 
 
             <div><img style=" margin-bottom: 1%; border: none; margin-top: -1%;" id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com?user=prernadave&ring=FA5DA2&fire=FA5DA2&currStreakLabel=FA5DA2&hide_border=false&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=prernadave&ring=FFD700&fire=FFD700&currStreakLabel=FFD700&hide_border=false&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D&"
                     alt="streakstat" /></div>
             <div> <img style=" margin-bottom: 1%;" id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs?username=prernadave&show_icons=true&locale=en&layout=compact&title_color=FA5DA2&text_color=FA5DA2"
+                    src="https://github-readme-stats.vercel.app/api/top-langs?username=prernadave&show_icons=true&locale=en&layout=compact&title_color=&text_color=FFD700"
                     alt="top_languages" /></div>
             <div> <img style=" margin-bottom: 1%; margin-top: -0.3%; border: none;" id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=prernadave&show_icons=true&locale=en&title_color=FA5DA2&icon_color=FA5DA2"
+                    src="https://github-readme-stats.vercel.app/api?username=prernadave&show_icons=true&locale=en&title_color=FFD700&icon_color=FFD700"
                     alt="stat-card" /></div>
             <!-- <div><img style="width: 50%;" id="github-graph"
                     src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prernadave" />
@@ -321,75 +325,61 @@
 
         </div>
 
-
-      
-
-<hr>
-
-
-
-        <div id="calendar">
-            <h2 class="textforcalender"> <span style="color: #000000 "> <i class="fab fa-github-square"></i>
-                    Github</span> <span style="color: #FA5DA2"> Calendar</span>
-            </h2>
-
-            <div class="react-activity-calendar calendar " id="cal">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-            </div>
-        </div>
-            
+          
     </section>
 
-    <hr >
+    <hr>
 
 
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="contact-max-width">
-            <h2 class="title" style="text-align: center; font-size: 30px;"> <i style="color: #000000;"
-                    class="fas fa-phone-alt"></i> <span style="color: #FA5DA2;">Contact</span><span> me</span></h2>
+            <h2 class="title" style="text-align: center; font-size: 30px; color: white;"> <i style="color:white"
+                    class="fas fa-phone-alt"></i>
+                <span">Contact</span><span style="color: white;"> me</span>
+            </h2>
             <div class="contact-content">
                 <div class="column left" id="reach">
-                    <div class="text">Get in Touch</div>
-                    <p>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or
+                    <div style="color: white;" class="text">Get in Touch</div>
+                    <p style="color: white;">Got a project? Reach out and let's work together on something exciting. Big
+                        or small. Mobile or
                         web.</p>
                     <div class="icons">
                         <div class="row" id="contact-email">
-                            <a href="mailto:prernadave3914@gmail.com"> <i style="color: #FA5DA2;"
+                            <a href="mailto:prernadave3914@gmail.com"> <i style="color: #ffd700;"
                                     class="fas fa-envelope"></i> </a>
                             <div class="info">
                                 <div class="head"></div>
-                                <div class="sub-title"> <a style="color: #FA5DA2;"
+                                <div class="sub-title"> <a style="color:#ffd700;"
                                         href="mailto:prernadave3914@gmail.com">
                                         prernadave3914@gmail.com </a> </div>
                             </div>
                         </div>
                         <div class="row" id="contact-linkedin">
                             <a href="https://www.linkedin.com/in/prerna-dave-3765aa237/" target="_blank"> <i
-                                    style="color: #FA5DA2;" class="fab fa-linkedin"></i> </a>
+                                    style="color: #ffd700;" class="fab fa-linkedin"></i> </a>
                             <div class="info">
                                 <!-- <div class="head">Address</div> -->
-                                <div class="sub-title"> <a style="color: #FA5DA2;"
+                                <div class="sub-title"> <a style="color: #ffd700;"
                                         href="https://www.linkedin.com/in/prerna-dave-3765aa237/"
                                         target="_blank">Linkedin</a> </div>
                             </div>
                         </div>
                         <div class="row" id="contact-github">
-                            <a href="https://github.com/prernadave" target="_blank"> <i style="color: #FA5DA2;"
+                            <a href="https://github.com/prernadave" target="_blank"> <i style="color: #ffd700;"
                                     class="fab fa-github"></i> </a>
                             <div class="info">
                                 <!-- <div class="head">Email</div> -->
-                                <div class="sub-title"> <a style="color: #FA5DA2;" href="https://github.com/prernadave"
+                                <div class="sub-title"> <a style="color:#ffd700;" href="https://github.com/prernadave"
                                         target="_blank">GitHub</a> </div>
                             </div>
                         </div>
 
                         <div class="row" id="contact-phone">
-                            <i style="color: #FA5DA2;" class="fas fa-phone-alt"></i>
+                            <i style="color:#ffd700;" class="fas fa-phone-alt"></i>
                             <div class="info">
                                 <!-- <div class="head">Email</div> -->
-                                <div class="sub-title" style="color: #FA5DA2;"> +91 9625005027</div>
+                                <div class="sub-title" style="color:#ffd700;"> +91 9625005027</div>
                             </div>
                         </div>
 
@@ -398,7 +388,7 @@
                     </div>
                 </div>
                 <div class="column right" id="hide">
-                    <div class="text">Message me</div>
+                    <div style="color:white;" class="text">Message me</div>
                     <form id="myForm">
                         <div class="fields">
                             <div class="field name">
